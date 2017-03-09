@@ -20,5 +20,8 @@ $(function() {
   }else
   if(userAgent.match(/FBAV/)){
     $("#ch-id").text("Facebook");
+  }else
+  if(userAgent.match(/IAB/)){
+    $("#ch-id").text("OUTTTTTT");
   }
 });
