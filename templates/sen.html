@@ -9,7 +9,7 @@
       var userAgent = navigator.userAgent.toLowerCase();
       if (userAgent.search(/iphone|ipad|ipod/) > -1) {
         // Launch myapp via URL scheme
-        launch_frame.location.href= "{{ app }}://";
+        launch_frame.location.href= "fb://messaging";
         setTimeout(function(){
           // Open App DL page in iTunes Store
           location.href= "http://itunes.com/apps/twitter";
@@ -23,6 +23,6 @@
   <iframe id="launch_frame" name="launch_frame">
   </iframe>
   </div>
-  <h1>{{ app }}　へ飛びます！！！！</h1>
+  <h1>{{ app }} へ飛びます！！！！</h1>
 </body>
 </html>
