@@ -9,6 +9,7 @@ $(function() {
   var platform = window.navigator.platform;
   //コード名
   var appCodeName = window.navigator.appCodeName;
+  <a href="twitter://timeline">TwitterAppのタイムラインを表示！</a>
   console.log(appVersion);
   $("#box2").text(userAgent);
   $("#box3").text(appVersion);
