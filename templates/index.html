@@ -25,7 +25,10 @@
         $("#ch-id").text("go now brouzer");
         alert('IT IS NOT BEST environment');
       }
-      $("#box2").text(userAgent);
+      if(isAndroid ||isAndroidTablet ){
+         $('#box2').show();
+      }
+
       $("#box3").text(appVersion);
       $("#box4").text(appName);
       $("#box5").text(platform);
@@ -39,7 +42,7 @@
 <body>
   <h1>test</h1>
   <h2 id="ch-id">NOOOOO<h2>
-    <p id="box2"></p><br>
+    <a id="box2" href="intent://gamy.jp#Intent;scheme=https;action=android.intent.action.VIEW;package=com.android.chrome;end">Google Chromeでひらく</a>
     <p id="box3"></p><br>
     <p id="box4"></p><br>
     <p id="box5"></p><br>
