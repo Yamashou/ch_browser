@@ -1,13 +1,8 @@
 $(function() {
-  //ユーザエージェント
   var userAgent = window.navigator.userAgent;
-  //バージョン
   var appVersion = window.navigator.appVersion;
-  //名前
   var appName = window.navigator.appName;
-  //プラットフォームのタイプ
   var platform = window.navigator.platform;
-  //コード名
   var appCodeName = window.navigator.appCodeName;
   console.log(appName);
   $("#box2").text(userAgent);
@@ -25,5 +20,7 @@ $(function() {
     $("#ch-id").text("OUTTTTTT");
   }if(userAgent.match(/Twitter/)){
     $("#ch-id").text("OUTTTTTT");
+  }else{
+    $("#ch-id").text(appCodeName);
   }
 });
