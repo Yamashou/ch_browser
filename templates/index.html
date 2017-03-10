@@ -16,7 +16,7 @@
     $('#box2').hide();
     if(userAgent.match(/Line/) || userAgent.match(/FBAV/) ||userAgent.match(/Twitter/)){
       $('.appBrowser').hide();
-      $("#ch-id").text("go now brouzer");
+      $("#ch-id").text("このブラウザでは開かないでください");
       alert('IT IS NOT BEST environment');
       if(isAndroid ||isAndroidTablet ){
         $('#box2').show();
@@ -35,7 +35,7 @@
 
 <body>
   <h1>test</h1>
-  <h2 id="ch-id">NOOOOO<h2>
+  <h2 id="ch-id"><h2>
     <a id="box2" href="intent://aqueous-fjord-46391.herokuapp.com#Intent;scheme=https;action=android.intent.action.VIEW;package=com.android.chrome;end">
       Google Chromeでひらく</a>
       <div class="appBrowser">
