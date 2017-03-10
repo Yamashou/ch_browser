@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html', message="Hello")
+    return render_template('index.html')
 
 @app.route("/app/<appname>",methods=["GET"])
 def test(appname):
