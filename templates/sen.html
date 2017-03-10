@@ -17,7 +17,8 @@
       }else if(userAgent.search(/android/) > -1){
         setTimeout(function(){
           // Open App DL page in iTunes Store
-          location.href= "android-app://com.android.chrome/https/aqueous-fjord-46391.herokuapp.com/app/test";
+          // location.href= "android-app://com.android.chrome/https/aqueous-fjord-46391.herokuapp.com/app/test";
+          window.href="intent://someurl.org#Intent;scheme=http;action=android.intent.action.VIEW;package=com.android.browser;end";
         } , 500);
       }
     });
