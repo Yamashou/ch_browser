@@ -18,9 +18,5 @@ $(function() {
   }else
   if(userAgent.match(/IAB/)){
     $("#ch-id").text("OUTTTTTT");
-  }if(userAgent.match(/Twitter/)){
-    $("#ch-id").text("OUTTTTTT");
-  }else{
-    $("#ch-id").text(appCodeName);
   }
 });
