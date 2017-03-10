@@ -8,18 +8,14 @@
   <script type="text/javascript">
   $(function() {
     const userAgent = window.navigator.userAgent;
-    const appVersion = window.navigator.appVersion;
-    const appName = window.navigator.appName;
-    const platform = window.navigator.platform;
-    const appCodeName = window.navigator.appCodeName;
     const ua = navigator.userAgent.toLowerCase();
     const isiPhone = (ua.indexOf('iphone') > -1);
     const isiPad = (ua.indexOf('ipad') > -1);
     const isAndroid = (ua.indexOf('android') > -1) && (ua.indexOf('mobile') > -1);
     const isAndroidTablet = (ua.indexOf('android') > -1) && (ua.indexOf('mobile') == -1);
-    const isMobile = isAndroidTablet || isAndroid || isiPad || isiPhone;
     $('#box2').hide();
-    if(userAgent.match(/Line/) || userAgent.match(/FBAV/) ||userAgent.match(/Twitter/)){
+    if(userAgent.match(/Line/) || userAgent.match(/FBAV/) ||userAgent.match(/Twitter/)){]
+      $('#appBrowser').hide();
       $("#ch-id").text("go now brouzer");
       alert('IT IS NOT BEST environment');
       if(isAndroid ||isAndroidTablet ){
@@ -42,9 +38,11 @@
   <h2 id="ch-id">NOOOOO<h2>
     <a id="box2" href="intent://aqueous-fjord-46391.herokuapp.com#Intent;scheme=https;action=android.intent.action.VIEW;package=com.android.chrome;end">
       Google Chromeでひらく</a>
-      <p id="box3"></p><br>
-      <p id="box4"></p><br>
-      <p id="box5"></p><br>
-      <p id="box6"></p><br>
+      <div id="appBrowser">
+      <p id="box3">test</p><br>
+      <p id="box4">test</p><br>
+      <p id="box5">test</p><br>
+      <p id="box6">test</p><br>
+    </div>
     </body>
     </html>
