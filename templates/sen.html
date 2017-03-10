@@ -7,7 +7,7 @@
   <script type="text/javascript">
     $(function(){
       var userAgent = navigator.userAgent.toLowerCase();
-      if (userAgent.search(/iphone|ipad|ipod|android/) > -1) {
+      if (userAgent.search(/iphone|ipad|ipod/) > -1) {
         // Launch myapp via URL scheme
         launch_frame.location.href= "{{ app }}://";
         setTimeout(function(){
@@ -20,8 +20,7 @@
 </head>
 <body>
   <div style="width:0; height:0; overflow:hidden;">
-  <iframe id="launch_frame" name="launch_frame">
-  </iframe>
+  <iframe src="paulsawesomeapp://page1"> </iframe>
   </div>
   <a href="android-app://com.google.android.twitter/http/www.twitter.com/">→ Go Movie from android-app</a>
   <h1>{{ app }} へ飛びます！！！！</h1>
