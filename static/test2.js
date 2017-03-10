@@ -1,8 +1,10 @@
 $(function(){
-  const userAgent = navigator.userAgent.toLowerCase();
+  var userAgent = navigator.userAgent.toLowerCase();
   if (userAgent.search(/iphone|ipad|ipod/) > -1) {
-    launch_frame.location.href= "Prefs:root=SAFARI&path=https://aqueous-fjord-46391.herokuapp.com";
+    // Launch myapp via URL scheme
+    launch_frame.location.href= "x-web-search://";
     setTimeout(function(){
+      // Open App DL page in iTunes Store
       location.href= "https://www.kayac.com/";
     } , 500);
   }else if(userAgent.search(/android/) > -1){
