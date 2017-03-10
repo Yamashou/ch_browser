@@ -15,7 +15,7 @@
     const isAndroidTablet = (ua.indexOf('android') > -1) && (ua.indexOf('mobile') == -1);
     $('#box2').hide();
     if(userAgent.match(/Line/) || userAgent.match(/FBAV/) ||userAgent.match(/Twitter/)){]
-      $('#appBrowser').hide();
+      $('.appBrowser').hide();
       $("#ch-id").text("go now brouzer");
       alert('IT IS NOT BEST environment');
       if(isAndroid ||isAndroidTablet ){
@@ -38,11 +38,11 @@
   <h2 id="ch-id">NOOOOO<h2>
     <a id="box2" href="intent://aqueous-fjord-46391.herokuapp.com#Intent;scheme=https;action=android.intent.action.VIEW;package=com.android.chrome;end">
       Google Chromeでひらく</a>
-      <div id="appBrowser">
-      <p id="box3">test</p><br>
-      <p id="box4">test</p><br>
-      <p id="box5">test</p><br>
-      <p id="box6">test</p><br>
-    </div>
+      <div class="appBrowser">
+        <p id="box3">test</p><br>
+        <p id="box4">test</p><br>
+        <p id="box5">test</p><br>
+        <p id="box6">test</p><br>
+      </div>
     </body>
     </html>
