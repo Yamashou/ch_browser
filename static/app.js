@@ -9,7 +9,7 @@ $(function() {
   var platform = window.navigator.platform;
   //コード名
   var appCodeName = window.navigator.appCodeName;
-  console.log(appVersion);
+  console.log(jQuery.browser.msie);
   $("#box2").text(userAgent);
   $("#box3").text(appVersion);
   $("#box4").text(appName);
