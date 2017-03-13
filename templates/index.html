@@ -23,7 +23,7 @@
       }
       if(userAgent.match(/iphone|ipad/))
       {
-        $("#ch-id").text("safariで開いてください");
+        $('.test_a').append('<div>Safariを推奨いたします</div>');
       }
     }else if( isAndroid && document.referrer.indexOf('://t.co/') >= 0){
       $('.test_a').append('<div class="alert"></div>');
@@ -74,6 +74,5 @@
     <div class="test_a"></div>
     <a class="alert_test"href="intent://aqueous-fjord-46391.herokuapp.com#Intent;scheme=https;action=android.intent.action.VIEW;package=com.android.chrome;end">
       Google Chromeでひらく</a>
-
     </body>
     </html>
