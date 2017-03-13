@@ -13,7 +13,6 @@
     const isiPad = (ua.indexOf('ipad') > -1);
     const isAndroid = (ua.indexOf('android') > -1) && (ua.indexOf('mobile') >= -1);
     const isAndroidTablet = (ua.indexOf('android') > -1) && (ua.indexOf('mobile') == -1);
-    $("ch").text(ua)
     $(".alert_test").hide();
     if(userAgent.match(/Line|FBAV|Twitter/)){
       $('.test_a').append('<div class="alert"></div>');
@@ -69,7 +68,6 @@
 
 <body>
   <h1 class="tester">テストページ</h1>
-  <h2 class="ch"></h2>
   <h2 id="ch-id"><h2>
     <div class="test_a"></div>
     <a class="alert_test"href="intent://aqueous-fjord-46391.herokuapp.com#Intent;scheme=https;action=android.intent.action.VIEW;package=com.android.chrome;end">
