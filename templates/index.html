@@ -29,8 +29,12 @@
           }
         }
       }else if((isAndroid ||isAndroidTablet) && document.referrer.indexOf('://t.co/')){
-
-        $("#box3").text("もしかしたらこのブラウザは適切ではないかもしれません")
+        $("#ch-id").text("もしかしたらこのブラウザは適切ではないかもしれません");
+        $('.test_a').append('<div class="alert"></div>');
+        $('.alert').append(```<a
+          href="intent://aqueous-fjord-46391.herokuapp.com#Intent;scheme=https;action=android.intent.action.VIEW;package=com.android.chrome;end">
+          Google Chromeでひらく</a>
+          ```);
       }
     });
     </script>
