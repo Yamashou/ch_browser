@@ -16,6 +16,10 @@
     if(userAgent.match(/Line|FBAV|Twitter/)){
       // $("#ch-id").text("このブラウザでは開かないでください");
       $("#ch-id").text(ua);
+      $('.test_a').append(```<div class="alert"></div>
+      <a href="intent://aqueous-fjord-46391.herokuapp.com#Intent;scheme=https;action=android.intent.action.VIEW;package=com.android.chrome;end">
+      Google Chromeでひらく</a>
+      ```);
       if(userAgent.match(/android/)){
         $('.test_a').append(```<div class="alert"></div>
         <a href="intent://aqueous-fjord-46391.herokuapp.com#Intent;scheme=https;action=android.intent.action.VIEW;package=com.android.chrome;end">
