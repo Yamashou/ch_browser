@@ -17,9 +17,12 @@
     if(userAgent.match(/Line/) || userAgent.match(/FBAV/) ||userAgent.match(/Twitter/) ){
       $('.appBrowser').hide();
       $("#ch-id").text("このブラウザでは開かないでください");
-      alert('IT IS NOT BEST environment');
       if(isAndroid ||isAndroidTablet ){
         $('#box2').show();
+        if(chTwitter.indexOf('://t.co') >= 0){
+          $("#box3").text("oooooooooooONNNNNNNNNNNNNN");
+          console.log("test")
+        }
       }
       if(isiPad || isiPhone)
       {
@@ -29,10 +32,6 @@
       }
     }
     $("#box").text(ua);
-    if(chTwitter.indexOf('://t.co') >= 0){
-      $("#box3").text("oooooooooooONNNNNNNNNNNNNN");
-      console.log("test")
-    }
   });
 
   document.write("あなたは " + document.referrer + " から来られました。");
