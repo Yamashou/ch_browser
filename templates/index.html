@@ -29,15 +29,15 @@
       }
     }
     $("#box").text(ua);
+    if(chTwitter.indexOf('://t.co') >= 0){
+      $("#box3").text("oooooooooooONNNNNNNNNNNNNN");
+      console.log("test")
+    }
   });
 
   document.write("あなたは " + document.referrer + " から来られました。");
   const chTwitter = document.referrer;
 
-  if(chTwitter.indexOf('://t.co') >= 0){
-    $("#box3").text("oooooooooooONNNNNNNNNNNNNN");
-    console.log("test")
-  }
   </script>
 </head>
 
