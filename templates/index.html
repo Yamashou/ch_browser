@@ -28,7 +28,7 @@
       {
 
       }
-    }else if(userAgent.match(/android/) && document.referrer.indexOf('://t.co/')){
+    }else if( isAndroid && document.referrer.indexOf('://t.co/')){
       $("#ch-id").text("もしかしたらこのブラウザは適切ではないかもしれません");
       $(".alert_test").show();
       }
