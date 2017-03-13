@@ -29,8 +29,10 @@
         $("#ch-id").text("safariで開いてください");
       }
     }else if( isAndroid && document.referrer.indexOf('://t.co/')){
+
       $("#ch-id").text("もしかしたらこのブラウザは適切ではないかもしれません");
-      $('.test_a').append('<div>Google Chromeで開くことを推奨いたします</div>')
+      $('.test_a').append('<div>Google Chromeで開くことを推奨いたします</div>');
+      $('.ch').text(document.referrer.indexOf('://t.co/'));
     }
   });
   </script>
