@@ -32,7 +32,8 @@
   });
 
   document.write("あなたは " + document.referrer + " から来られました。");
-  if(document.referrer){
+  const chTwitter = document.referrer;
+  if(chTwitter.indexOf('://t.co')){
     $("#box3").text(document.referrer);
   }
   </script>
