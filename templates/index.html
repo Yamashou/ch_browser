@@ -19,8 +19,8 @@
     $("ch").text(ua)
     $(".alert_test").hide();
     if(userAgent.match(/Line|FBAV|Twitter/)){
-      $("#ch-id").text("このブラウザでは開かないでください");
-      $('.test_a').append('<div class="alert">このブラウザでは開かないでください</div>');
+      $('.test_a').append('<div class="alert"></div>');
+      $('.test_a').append('<div>このブラウザでは開かないでください</div>');
       if(isAndroid){
         $(".alert_test").show();
       }
