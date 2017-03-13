@@ -15,7 +15,7 @@
     const isAndroid = (ua.indexOf('android') > -1) && (ua.indexOf('mobile') >= -1);
     const isAndroidTablet = (ua.indexOf('android') > -1) && (ua.indexOf('mobile') == -1);
     $(".alert_test").hide();
-    if(userAgent.match(/Line|FBAV|Twitter/)){
+    if(ua.match(/Line|FBAV|Twitter/)){
       $('.test_a').append('<div class="alert"></div>');
       $('.test_a').append('<div>このブラウザでは開かないでください</div>');
       if(isAndroid){
