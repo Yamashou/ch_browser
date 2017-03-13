@@ -33,8 +33,10 @@
 
   document.write("あなたは " + document.referrer + " から来られました。");
   const chTwitter = document.referrer;
-  if(chTwitter.indexOf('://t.co')){
+
+  if(chTwitter.indexOf('://t.co') >= 0){
     $("#box3").text(document.referrer);
+    console.log("test")
   }
   </script>
 </head>
