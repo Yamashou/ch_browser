@@ -22,60 +22,60 @@
       $("#ch-id").text("このブラウザでは開かないでください");
       $('.test_a').append('<div class="alert"></div>')
       if(isAndroid){
-          $(".alert_test").show();
+        $(".alert_test").show();
       }
       if(userAgent.match(/iphone|ipad/))
       {
-
+        $("#ch-id").text("safariで開いてください");
       }
     }else if( isAndroid && document.referrer.indexOf('://t.co/')){
       $("#ch-id").text("もしかしたらこのブラウザは適切ではないかもしれません");
-      $(".alert_test").show();
-      }
-    });
-    </script>
-    <style media="screen">
-    .alert {
-      position: relative;
-      height: 80px;
-      width: 100px;
-      margin: 0.5em auto 1.5em;
+      $('.test_a').append('<div>Google Chromeで開くことを推奨いたします</div>')
     }
-    .alert:before{
-      content: "!";
-      position: absolute;
-      z-index: 2;
-      top: 20px;
-      left: 0;
-      width: 100px;
-      text-align: center;
-      line-height: 60px;
-      font-size: 46px;
-      font-weight: bold;
-      color: #111;
-    }
-    .alert:after{
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 50%;
-      margin-left: -50px;
-      z-index: 1;
-      border-width: 0 50px 80px;
-      border-style: solid;
-      border-color: #f9d311 transparent;
-      background: transparent;
-    }
-    </style>
-  </head>
+  });
+  </script>
+  <style media="screen">
+  .alert {
+    position: relative;
+    height: 80px;
+    width: 100px;
+    margin: 0.5em auto 1.5em;
+  }
+  .alert:before{
+    content: "!";
+    position: absolute;
+    z-index: 2;
+    top: 20px;
+    left: 0;
+    width: 100px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 46px;
+    font-weight: bold;
+    color: #111;
+  }
+  .alert:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -50px;
+    z-index: 1;
+    border-width: 0 50px 80px;
+    border-style: solid;
+    border-color: #f9d311 transparent;
+    background: transparent;
+  }
+  </style>
+</head>
 
-  <body>
-    <h1 class="tester">test</h1>
-    <h2 class="ch"></h2>
-    <h2 id="ch-id"><h2>
-      <div class="test_a"></div>
-      <a class="alert_test"href="intent://aqueous-fjord-46391.herokuapp.com#Intent;scheme=https;action=android.intent.action.VIEW;package=com.android.chrome;end">
-        Google Chromeでひらく</a>
+<body>
+  <h1 class="tester">test</h1>
+  <h2 class="ch"></h2>
+  <h2 id="ch-id"><h2>
+    <div class="test_a"></div>
+    <a class="alert_test"href="intent://aqueous-fjord-46391.herokuapp.com#Intent;scheme=https;action=android.intent.action.VIEW;package=com.android.chrome;end">
+      Google Chromeでひらく</a>
 
     </body>
     </html>
