@@ -13,9 +13,6 @@
     const isiPad = (ua.indexOf('ipad') > -1);
     const isAndroid = (ua.indexOf('android') > -1) && (ua.indexOf('mobile') >= -1);
     const isAndroidTablet = (ua.indexOf('android') > -1) && (ua.indexOf('mobile') == -1);
-    console.log(ua);
-    console.log(userAgent.match(/android/));
-    $(".tester").text(isAndroid);
     $("ch").text(ua)
     $(".alert_test").hide();
     if(userAgent.match(/Line|FBAV|Twitter/)){
@@ -71,7 +68,7 @@
 </head>
 
 <body>
-  <h1 class="tester">test</h1>
+  <h1 class="tester">テストページ</h1>
   <h2 class="ch"></h2>
   <h2 id="ch-id"><h2>
     <div class="test_a"></div>
