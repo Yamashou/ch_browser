@@ -9,7 +9,7 @@
 
   $(function() {
     const userAgent = window.navigator.userAgent;
-    const ua = navigator.userAgent.toLowerCase();
+    const ua = userAgent.toLowerCase();
     const isiPhone = (ua.indexOf('iphone') > -1);
     const isiPad = (ua.indexOf('ipad') > -1);
     const isAndroid = (ua.indexOf('android') > -1) && (ua.indexOf('mobile') >= -1);
