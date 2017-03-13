@@ -28,7 +28,7 @@
       {
         $("#ch-id").text("safariで開いてください");
       }
-    }else if( isAndroid && document.referrer.indexOf('://t.co/')){
+    }else if( isAndroid && document.referrer.indexOf('://t.co/') >= 0){
 
       $("#ch-id").text("もしかしたらこのブラウザは適切ではないかもしれません");
       $('.test_a').append('<div>Google Chromeで開くことを推奨いたします</div>');
