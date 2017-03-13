@@ -6,6 +6,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script type="text/javascript">
+
   $(function() {
     const userAgent = window.navigator.userAgent;
     const ua = navigator.userAgent.toLowerCase();
@@ -20,7 +21,7 @@
       if(isAndroid){
         $(".alert_test").show();
       }
-      if(userAgent.match(/iphone|ipad/))
+      if(isiPhone || isiPad)
       {
         $('.test_a').append('<div>Safariを推奨いたします</div>');
       }
@@ -30,6 +31,7 @@
       $('.test_a').append('<div>Google Chromeで開くことを推奨いたします</div>');
     }
   });
+
   </script>
   <style media="screen">
   .alert {
