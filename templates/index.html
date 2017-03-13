@@ -13,29 +13,21 @@
     const isiPad = (ua.indexOf('ipad') > -1);
     const isAndroid = (ua.indexOf('android') > -1) && (ua.indexOf('mobile') > -1);
     const isAndroidTablet = (ua.indexOf('android') > -1) && (ua.indexOf('mobile') == -1);
+    $(".alert_test").hide();
     if(userAgent.match(/Line|FBAV|Twitter/)){
-      // $("#ch-id").text("このブラウザでは開かないでください");
+      $("#ch-id").text("このブラウザでは開かないでください");
       $("#ch-id").text(ua);
-      $('.test_a').append('<div class="alert"></div>
-      <a href="intent://aqueous-fjord-46391.herokuapp.com#Intent;scheme=https;action=android.intent.action.VIEW;package=com.android.chrome;end">
-      Google Chromeでひらく</a> ');
+      $('.test_a').append('<div class="alert"></div>')
       if(userAgent.match(/android/)){
-        $('.test_a').append(```<div class="alert"></div>
-        <a href="intent://aqueous-fjord-46391.herokuapp.com#Intent;scheme=https;action=android.intent.action.VIEW;package=com.android.chrome;end">
-        Google Chromeでひらく</a>
-        ```);
+          $(".alert_test").show();
       }
       if(userAgent.match(/iphone|ipad/))
       {
 
       }
-    }else if((isAndroid ||isAndroidTablet) && document.referrer.indexOf('://t.co/')){
+    }else if(userAgent.match(/android/) && document.referrer.indexOf('://t.co/')){
       $("#ch-id").text("もしかしたらこのブラウザは適切ではないかもしれません");
-      $('.test_a').append('<div class="alert"></div>');
-      $('.alert').append(```<a
-        href="intent://aqueous-fjord-46391.herokuapp.com#Intent;scheme=https;action=android.intent.action.VIEW;package=com.android.chrome;end">
-        Google Chromeでひらく</a>
-        ```);
+      $(".alert_test").show();
       }
     });
     </script>
@@ -76,22 +68,8 @@
 
   <body>
     <h1>test</h1>
-
     <h2 id="ch-id"><h2>
-      <div class="test_a"></div>
-
-      <!-- <div class="alert"></div> -->
-      <!-- <a id="box2" href="intent://aqueous-fjord-46391.herokuapp.com#Intent;scheme=https;action=android.intent.action.VIEW;package=com.android.chrome;end">
-      Google Chromeでひらく</a>
-      <p id="box">test</p><br>
-      <div class="appBrowser">
-      <p id="box3">test</p><br>
-
-      <p id="box4">test</p><br>
-      <p id="box5">test</p><br>
-      <p id="box6">test</p><br> -->
-      <!-- </div> -->
-
-
+      <a class="alert_test"href="intent://aqueous-fjord-46391.herokuapp.com#Intent;scheme=https;action=android.intent.action.VIEW;package=com.android.chrome;end">
+        Google Chromeでひらく</a>
     </body>
     </html>
