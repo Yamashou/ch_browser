@@ -19,10 +19,6 @@
       $("#ch-id").text("このブラウザでは開かないでください");
       if(isAndroid ||isAndroidTablet ){
         $('#box2').show();
-        if(chTwitter.indexOf('://t.co') >= 0){
-          $("#box3").text("oooooooooooONNNNNNNNNNNNNN");
-          console.log("test")
-        }
       }
       if(isiPad || isiPhone)
       {
@@ -30,6 +26,8 @@
           window.location.href = 'https://aqueous-fjord-46391.herokuapp.com/';
         }
       }
+    }else if((isAndroid ||isAndroidTablet) && document.referrer.indexOf('://t.co/')){
+      $("#box3").text("もしかしたらこのブラウザは適切ではないかもしれません")
     }
     $("#box").text(ua);
   });
