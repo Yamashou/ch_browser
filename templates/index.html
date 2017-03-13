@@ -32,7 +32,9 @@
   });
 
   document.write("あなたは " + document.referrer + " から来られました。");
-
+  if(document.referrer){
+    $("#box3").text(document.referrer);
+  }
   </script>
 </head>
 
