@@ -13,15 +13,15 @@
     const isiPhone = (ua.indexOf('iphone') > -1);
     const isiPad = (ua.indexOf('ipad') > -1);
     const isAndroid = (ua.indexOf('android') > -1) && (ua.indexOf('mobile') >= -1);
-    const isAndroidTablet = (ua.indexOf('android') > -1) && (ua.indexOf('mobile') == -1);
+    const isiPod = (ua.indexOf('ipod') > -1);
     $(".alert_test").hide();
-    if(userAgent.match(/Line|FBAV|Twitter/)){
+    if(userAgent.match(/Line|FBAV|twitter/)){
       $('.test_a').append('<div class="alert"></div>');
       $('.test_a').append('<div>このブラウザでは開かないでください</div>');
       if(isAndroid){
         $(".alert_test").show();
       }
-      if(isiPhone || isiPad)
+      if(isiPhone || isiPad || isiPod)
       {
         $('.test_a').append('<div>Safariを推奨いたします</div>');
       }
